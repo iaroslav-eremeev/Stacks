@@ -1,5 +1,6 @@
 package program;
 
+import model.Queue;
 import model.Stack;
 
 import java.util.Scanner;
@@ -8,14 +9,22 @@ public class Program {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Stack<String> stack = new Stack<>();
-        System.out.println("Please write 5 lines to add to stack");
-        stack.put(scanner.next());
-        stack.put(scanner.next());
+        Queue<String> queue = new Queue<>();
+        System.out.println("Enter 3 strings for a new stack");
         stack.put(scanner.next());
         stack.put(scanner.next());
         stack.put(scanner.next());
         System.out.println(stack);
+        System.out.println("Now we use get on stack. See what changed");
         stack.get();
         System.out.println(stack);
+        System.out.println("Enter 3 strings for a new queue");
+        queue.put(scanner.next());
+        queue.put(scanner.next());
+        queue.put(scanner.next());
+        System.out.println(queue);
+        System.out.println("Now we use get on queue. See what changed");
+        queue.get();
+        System.out.println(queue);
     }
 }
