@@ -2,6 +2,7 @@ package program;
 
 import model.Queue;
 import model.Stack;
+import util.Util;
 
 import java.util.Scanner;
 
@@ -26,5 +27,7 @@ public class Program {
         System.out.println("Now we use get on queue. See what changed");
         queue.get();
         System.out.println(queue);
+        System.out.println("Now we calculate factorial of a big number. Enter such a big number");
+        System.out.println("Its factorial is: " + Util.bigFactorial(scanner.nextInt()));
     }
 }
