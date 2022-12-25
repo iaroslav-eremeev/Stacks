@@ -12,9 +12,7 @@ public class Stack<T> {
 
         @Override
         public String toString() {
-            return "Entry{" +
-                    "value=" + value +
-                    "}\n";
+            return value + "\n";
         }
     }
 
@@ -26,7 +24,7 @@ public class Stack<T> {
         this.count++;
     }
 
-    public void get(){
+    public void pop(){
         this.last = this.last.prev;
         this.count--;
     }
